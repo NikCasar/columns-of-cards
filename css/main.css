@@ -1,7 +1,9 @@
 html {
   box-sizing: border-box;
-  font-family: Open Sans, sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5;
+  font-size: 1rem;
+  background-color: #f2f2f2;
 }
 
 *, *::before, *::after {
@@ -13,50 +15,83 @@ body {
   margin: 0;
 }
 
+section {
+  margin: 0 auto 1.5rem;
+  padding: .75rem;
+}
+
 h1 {
   font-size: 2rem;
   text-align: center;
+  margin-top: .75rem;
+}
+
+h3 {
+  font-size: .875rem;
+  margin: 0;
 }
 
 .content {
   display: flex;
 }
 
-.content div {
-  width: 50%;
-  padding: .75rem;
-  margin: 0 auto 1.5rem;
+.book {
+  width: 25%;
   display: flex;
   flex-direction: column;
+  padding: .75rem;
+  border: 1px solid #333;
+  border-top: 0;
+  border-bottom: 0;
 }
 
 h2 {
   font-size: 1rem;
+  margin: 0;
+  padding-top: 1.5rem;
 }
 
 .content p {
-  font-size: 1rem;
   flex-grow: 1;
+  margin: 0 auto 1.5rem;
 }
 
 img {
-  max-width: 100px;
+  width: 100%;
+  display: block;
+}
+
+.book img {
+  width: 100px;
+  margin: 0 auto;
 }
 
 .btn {
-font-size: .875rem;
-padding: .4em .75em .3em;
-border-radius: 8px;
-border-width: 3px;
-border-style: solid;
-background-color: #333;
-border-color: #333;
-display: inline-block;
+  font-size: 1.125rem;
+  padding: .4em .75em .3em;
+  border-radius: 8px;
+  border-width: 3px;
+  border-style: solid;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  border-color: #333;
+  display: block;
+}
+
+.btn:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-small {
+  font-size: .875rem;
 }
 
 .btn a {
   text-decoration: none;
-  color: #fff;}
+  color: #fff;
+}
 
 .book-one {
   background-color: #e2e2e2;
